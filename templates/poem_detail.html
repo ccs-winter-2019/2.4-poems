@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Programmer Poems :: {{ poem.title }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{poem.title}}</h1>
+    <p>{{poem.body}}</p>
+{% endblock %}

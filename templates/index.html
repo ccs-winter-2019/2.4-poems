@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <ul class="list-group">
+        {% for poem in poems %}
+            <li class="list-group-item">
+                {{ poem.title }}
+
+                <a class="btn btn-primary" href="/poem/{{ loop.index }}/">See Poem</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+{% block flav %} {{ favorite_flavor }} {% endblock %}

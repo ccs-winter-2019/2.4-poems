@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}Programmer Poems{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Programming Poems</h1>
+            <p class="lead">Ogden Nash Style</p>
+        </div>
+
+        {% block content %}{% endblock %}
+
+    </div>
+
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <ul>
+                    <li>About Us</li>
+                    <li>Our Vision</li>
+                    <li>Find us on Facebook</li>
+                    <li>Join the Team!</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                    <li>Link 4</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                    <li>Link 4</li>
+                </ul>
+            </div>
+        </div>
+        {% block flav %}{% endblock %}
+    </footer>
+
+</body>
+
+</html>
